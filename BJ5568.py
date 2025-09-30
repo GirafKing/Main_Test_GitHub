@@ -7,7 +7,7 @@ cards = [input() for _ in range(n)]
 numbers = set()
 
 for i in itertools.permutations(cards, k) :
-    number = i[0] + i[1]
+    number = ''.join(i)
     numbers.add(number)
 
 print(len(numbers))
