@@ -19,7 +19,6 @@ public class BJ25044_plus
             L.add(String.format("%02d:%02d", hour, minute));
         }
 
-        // 날짜 분기 없이 한 로직으로만 처리
         outer:
         while (day <= N && L.size() < 3) 
         {
@@ -46,7 +45,7 @@ public class BJ25044_plus
                 if (day > N) break outer;
             }
         }
-
+        
         // 출력
         System.out.println(L.size());
         for (String t : L) System.out.println(t);
