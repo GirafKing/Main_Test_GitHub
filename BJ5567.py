@@ -19,7 +19,7 @@ if grape.get(1) :
         a = grape[i]
         friends.extend(a)
 
-    friends.append(grape[1])
+    friends.extend(grape[1])
 
     result = set(friends)
 
