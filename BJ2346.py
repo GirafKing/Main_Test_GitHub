@@ -12,8 +12,8 @@ for _ in range(N) :
     num, paper = dq.popleft()
     out.append(str(num))
     if paper > 0 :      
-        dq.rotate(paper - 1)
+        dq.rotate(-(paper - 1))
     else :
-        dq.rotate(paper + 1)
+        dq.rotate(-paper)
 
 print(' '.join(out))
