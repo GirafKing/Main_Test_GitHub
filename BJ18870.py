@@ -7,7 +7,12 @@ numbers = list(map(int, input().split()))
 out = []
 
 S = sorted(set(numbers))
-dict = {}
+pos = {}
+for i, v in enumerate(S) :
+    pos[v] = i
+
 for num in numbers :
-    count = N - S.index(num) - 1
-    dict[num] = count
+    a = str(pos[num])
+    out.append(a)
+
+print(" ".join(out))
