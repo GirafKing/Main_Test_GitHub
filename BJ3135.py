@@ -13,7 +13,8 @@ close_radio_button = min(dict, key=dict.get)
 if abs(A - B) > dict[close_radio_button] :
     current_hz = close_radio_button
     count += 1
+    count += abs(current_hz - B)
 else :
-    count += abs(current_hz - B) + 1
+    count += abs(current_hz - B)
 
 print(count)
